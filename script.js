@@ -22,3 +22,10 @@ window.onload = function () {
     if (event.key === 'Enter') search();
   });
 };
+function suggest() {
+  window.open("https://forms.gle/Ww1f47VPdLDW7DH89")
+}
+function openGit() {
+  window.open("https://github.com/Peeves426")
+}
+
