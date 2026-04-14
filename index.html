@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/rex.png">
+  <title>rexplorer</title>
+</head>
+<body>
+  <div id="mainMenu">
+    <input id="searchBox" class="searchbar" type="text" list="websiteSuggestions" placeholder="Enter a site...">
+    <datalist id="websiteSuggestions">
+      <option value="wikipedia.org">
+      <option value="google.com">
+      <option value="youtube.com">
+      <option value="github.com">
+      <option value="stackoverflow.com">
+      <option value="reddit.com">
+      <option value="amazon.com">
+      <option value="twitter.com">
+      <option value="facebook.com">
+      <option value="etsy.com">
+      <option value="ebay.com">
+      <option value="pinterest.com">
+      <option value="walmart.com">
+      <option value="target.com">
+      <option value="bestbuy.com">
+      <option value="discord.com">
+      <option value="instagram.com">
+    </datalist>
+    <button id="searchButton" class="searchbar" onclick="search()">Search</button>
+  </div>
+
+  <div id="outerRingRed"></div>
+  <div id="outerRingOrange"></div>
+  <div id="outerRingYellow"></div>
+  <div id="outerRingGreen"></div>
+  <div id="outerRingBlue"></div>
+  <div id="outerRingPurple"></div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
