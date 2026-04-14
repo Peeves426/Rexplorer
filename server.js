@@ -155,9 +155,9 @@ app.get('/proxy', async (req, res) => {
         color: white;
         gap: 10px;
       ">
-        <img src="/rex.png" style="height:22px; width:22px; object-fit:contain;" />
+        <a href="/" style="color:white; font-size:12px; text-decoration:none; background:#333; border:1px solid #555; padding:4px 10px; border-radius:5px;">&#8592; Home</a>
+        <img src="/rex.png" style="height:22px; width:22px; object-fit:contain; margin-left:auto;" />
         <span style="font-weight:bold; letter-spacing:1px;">Rexplorer</span>
-        <a href="/" style="margin-left:auto; color:white; font-size:12px; text-decoration:none; background:#333; border:1px solid #555; padding:4px 10px; border-radius:5px;">&#8592; Home</a>
       </div>
       <div style="height:36px;"></div>
     `);
