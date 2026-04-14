@@ -11,7 +11,7 @@ function search() {
     }
     targetUrl = requestedSite;
   } else {
-    targetUrl = 'https://html.duckduckgo.com/html/?q=' + encodeURIComponent(requestedSite);
+    targetUrl = 'https://www.google.com/search?q=' + encodeURIComponent(requestedSite);
   }
 
   window.location.href = '/proxy?url=' + encodeURIComponent(targetUrl);

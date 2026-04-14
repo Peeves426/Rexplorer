@@ -138,6 +138,30 @@ app.get('/proxy', async (req, res) => {
     $('meta[http-equiv="X-Frame-Options"]').remove();
     $('base[href]').remove(); // remove <base> tag so our relative URLs work
 
+    // Inject Rexplorer top bar
+    $('body').prepend(`
+      <div style="
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        height: 36px;
+        background: #111;
+        border-bottom: 1px solid #333;
+        display: flex;
+        align-items: center;
+        padding: 0 14px;
+        z-index: 2147483647;
+        font-family: Verdana, sans-serif;
+        font-size: 13px;
+        color: white;
+        gap: 10px;
+      ">
+        <img src="/rex.png" style="height:22px; width:22px; object-fit:contain;" />
+        <span style="font-weight:bold; letter-spacing:1px;">Rexplorer</span>
+        <a href="/" style="margin-left:auto; color:#aaa; font-size:11px; text-decoration:none;">&#8592; Home</a>
+      </div>
+      <div style="height:36px;"></div>
+    `);
+
     // Inject runtime interceptor for fetch, XHR, and dynamic image loading
     $('head').prepend(`
       <script>
